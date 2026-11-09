@@ -13,7 +13,7 @@ def main() -> None:
     tank2 = 15
 
     is_red_alarm = tank1 < LOW_LEVEL and tank2 < LOW_LEVEL
-    is_orange_alarm = (tank1 < LOW_LEVEL ^ tank2 < LOW_LEVEL)
+    is_orange_alarm = (tank1 < LOW_LEVEL) ^ (tank2 < LOW_LEVEL)
 
     print(f"Tank 1 level: {tank1}, Tank 2 level: {tank2}")
     print(f"Red alarm: {is_red_alarm}")
